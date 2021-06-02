@@ -3,8 +3,8 @@ cmake_minimum_required(VERSION 3.20.2)
 project(MCExternal)
 
 # Why the fuck. KILL ME NOW. ARCH FUCK YOU WHATS WRONG WITH UR FUCKING HEADERS WHYYYYYYYYYyy
-add_compile_options(-Wall -Wextra)
-add_link_options(-lX11 -lXtst)
+add_compile_options(-Wall -Wextra -O2)
+add_link_options(-lX11 -lXtst -lncurses)
 
 file(GLOB_RECURSE SOURCES "${CMAKE_SOURCE_DIR}/src/*.cpp")
 add_executable(${PROJECT_NAME} ${SOURCES})

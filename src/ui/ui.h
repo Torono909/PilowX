@@ -6,11 +6,11 @@
 
 class MainUi {
 public:
-  MainUi(AutoClicker *clicker, std::mutex &clickerMutex);
+  MainUi(AutoClicker *clicker, std::mutex *clickerMutex);
   void run();
 private:
   AutoClicker *clicker;
-  std::mutex &clickerMutex;
+  std::mutex *clickerMutex;
 };
 
 #endif /* end of include guard: UI_H */
