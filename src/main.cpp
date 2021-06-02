@@ -17,7 +17,7 @@ void runUi() {
 
 int main() {
 	if (!checkDeps())
-		return 1;
+		return EXIT_FAILURE;
 
 	clicker = new AutoClicker(16, 52);
 	clicker->updateValues();
