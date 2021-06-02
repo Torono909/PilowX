@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 3.20.2)
 
 project(MCExternal)
 
-# Why the fuck. KILL ME NOW. ARCH FUCK YOU WHATS WRONG WITH UR FUCKING HEADERS WHYYYYYYYYYyy
 add_compile_options(-Wall -Wextra -O2)
 add_link_options(-lX11 -lXtst -lncurses)
 
