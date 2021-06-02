@@ -21,9 +21,17 @@ void Slider::render(int x, int y, int width) {
 void Slider::drawBox(int x, int y, int width) {
   mvaddch(y + 1, x, '|');
   mvaddch(y + 1, x + width, '|');
+
   for (int i = 0; i < width - 1; i++) {
     mvaddstr(y, x + 1 + i, "-");
     mvaddch(y + 2, x  + 1 + i, '-');
+  }
+
+  float partial = ((float)(current - min)) / ((float)(max - min));
+  int stars = (width - 2) * partial;
+
+  for (int i = 0; i < stars; i++) {
+    mvaddch(y + 1, x + 1 + i, '*');
   }
 }
 
