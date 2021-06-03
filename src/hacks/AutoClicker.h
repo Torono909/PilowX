@@ -10,7 +10,7 @@ public:
   float getCps();
   void setCps(float cps);
   int getEventDelay();
-  void setEventDealy(int eventDelay);
+  void setEventDelay(int eventDelay);
   float getDropChance();
   void setDropChance(float dropChance);
   void updateValues();

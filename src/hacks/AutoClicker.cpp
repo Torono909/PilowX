@@ -90,7 +90,7 @@ int AutoClicker::getEventDelay() {
   return eventDelay;
 }
 
-void AutoClicker::setEventDealy(int eventDelay) {
+void AutoClicker::setEventDelay(int eventDelay) {
   this->eventDelay = eventDelay;
 }
 

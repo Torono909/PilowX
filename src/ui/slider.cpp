@@ -15,7 +15,7 @@ void Slider::render(int x, int y, int width) {
   mvaddstr(y, x, name);
   mvaddstr(y + 2, x, std::to_string(min).c_str());
   drawBox(x + 2, y + 1, width - 4);
-  mvaddstr(y + 2, x + width, std::to_string(max).c_str());
+  mvaddstr(y + 2, x + width, std::to_string(current).c_str());
 }
 
 void Slider::drawBox(int x, int y, int width) {
